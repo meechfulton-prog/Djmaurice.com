@@ -1,20 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Maurice Fulton — Official</title>
-  <meta name="description" content="Maurice Fulton — iconic DJ/producer. Abstract vintage site with streaming links, releases, and bookings." />
+  <meta name="description" content="Maurice Fulton — iconic DJ/producer. Abstract vintage site with streaming links, releases, bookings, and Shadow Label merch." />
+
+  <!-- ✅ Correct CSS link -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- ✅ GOOGLE ADSENSE CODE -->
-  <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643412368407124"
-    crossorigin="anonymous">
-  </script>
+  <!-- Optional: helps caching behave better on GH Pages -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 </head>
 
-<body>
+<body id="top">
+
   <!-- Ambient background -->
   <div class="bg">
     <div class="blob b1"></div>
@@ -23,6 +25,7 @@
     <canvas id="flow" aria-hidden="true"></canvas>
   </div>
 
+  <!-- Topbar -->
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Home">
       <span class="mark">MF</span>
@@ -32,352 +35,491 @@
     <nav class="nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#music">Music</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#booking">Booking</a>
+      <a href="#releases">Releases</a>
       <a href="#shadow-label">Shadow Label</a>
+      <a href="#booking">Booking</a>
     </nav>
 
     <div class="cta">
-      <a class="btn ghost" href="#listen">Listen</a>
-      <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">Mode</button>
+      <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">Theme</button>
+      <a class="btn" href="#booking">Book</a>
     </div>
   </header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="kicker">Official Artist Page</p>
-          <h1 class="title">
-            Maurice Fulton
-            <span class="subtitle">Iconic DJ / Producer — abstract vintage sound & culture.</span>
-          </h1>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
 
-          <div class="stats">
-            <div class="stat">
-              <span class="stat-num" data-count="300000">0</span>
-              <span class="stat-label">monthly listeners</span>
-            </div>
+      <div>
+        <div class="kicker">Iconic DJ / Producer</div>
+        <h1 class="title">
+          Maurice Fulton
+          <span class="subtitle">Abstract vintage sound • Detroit roots • Global influence</span>
+        </h1>
+
+        <p class="lead">
+          A boundary-pushing artist known for deep grooves, experimental house, and fearless musical range.
+          Explore streaming links, releases, and booking info below.
+        </p>
+
+        <div class="stats" aria-label="Artist stats">
+          <div class="stat">
+            <div class="stat-num">300K+</div>
+            <span class="stat-label">monthly listeners</span>
           </div>
-
-          <p class="lead">
-            From deep-cut club history to future-forward productions, Maurice Fulton’s sound is
-            known for groove, invention, and unmistakable character.
-          </p>
-
-          <!-- STREAMING LINKS -->
-          <div class="hero-actions" id="listen">
-            <a class="pill"
-               href="https://open.spotify.com/artist/4T6l995AHz8HCY7TCfQorD"
-               target="_blank" rel="noopener noreferrer">
-              Spotify
-            </a>
-
-            <a class="pill"
-               href="https://music.apple.com/us/artist/maurice-fulton/29292917"
-               target="_blank" rel="noopener noreferrer">
-              Apple Music
-            </a>
-
-            <a class="pill"
-               href="https://youtube.com/playlist?list=PLjQhLROnKpwwVk5i4wuQWfF_4Ncld-9um&si=IveuCvKuwkXJHeAk"
-               target="_blank" rel="noopener noreferrer">
-              YouTube
-            </a>
-
-            <a class="pill"
-               href="https://bubbleteasecommunications.bandcamp.com/album/maurice-fulton-presents-up"
-               target="_blank" rel="noopener noreferrer">
-              Bandcamp
-            </a>
+          <div class="stat">
+            <div class="stat-num">30+ years</div>
+            <span class="stat-label">in dance music</span>
           </div>
-
-          <!-- ✅ TWO AFFILIATE LINKS -->
-          <section class="panel" style="margin-top:16px; padding:14px 14px 12px;">
-            <p style="margin:0 0 10px; font-weight:700; letter-spacing:.2px;">Essential Items</p>
-
-            <div style="display:flex; gap:12px; flex-wrap:wrap;">
-              <a href="https://amzn.to/4ttZJHz"
-                 target="_blank"
-                 rel="nofollow sponsored noopener noreferrer"
-                 style="
-                   display:inline-flex;
-                   align-items:center;
-                   gap:8px;
-                   padding:10px 16px;
-                   border-radius:999px;
-                   text-decoration:none;
-                   font-weight:800;
-                   background:linear-gradient(135deg,#ff9900,#ffd27a);
-                   color:#111;
-                   box-shadow:0 6px 20px rgba(0,0,0,.2);
-                 ">
-                🛒 Shop Pick #1
-              </a>
-
-              <a href="https://amzn.to/3Mpn4tb"
-                 target="_blank"
-                 rel="nofollow sponsored noopener noreferrer"
-                 style="
-                   display:inline-flex;
-                   align-items:center;
-                   gap:8px;
-                   padding:10px 16px;
-                   border-radius:999px;
-                   text-decoration:none;
-                   font-weight:800;
-                   background:linear-gradient(135deg,#111,#333);
-                   color:white;
-                   box-shadow:0 6px 20px rgba(0,0,0,.2);
-                 ">
-                🛍 Shop Pick #2
-              </a>
-            </div>
-
-            <p style="margin:10px 0 0; font-size:12px; opacity:.7;">
-              Brand Affiliate links
-            </p>
-          </section>
-
-          <div class="note">
-            <span class="dot"></span>
-            <span>Official streaming links updated.</span>
+          <div class="stat">
+            <div class="stat-num">Worldwide</div>
+            <span class="stat-label">DJ bookings</span>
           </div>
         </div>
 
-        <!-- MIDDLE PHOTO -->
-        <div class="hero-art">
-          <div class="frame tilt">
-            <img src="assets/dj-photo.jpg" alt="Maurice Fulton performing" />
-          </div>
+        <div class="hero-actions">
+          <a class="pill" href="#music">Listen Now</a>
+          <a class="pill" href="#releases">See Releases</a>
+          <a class="pill" href="#shadow-label">Shadow Label Merch</a>
+          <a class="pill small" target="_blank" href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6" rel="noopener">
+            Instagram
+          </a>
+        </div>
 
-          <div class="floating">
-            <div class="chip">Abstract</div>
-            <div class="chip">Vintage</div>
-            <div class="chip">Arty</div>
-            <div class="chip">Club Culture</div>
-          </div>
+        <div class="note">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Official site • Streaming + bookings • Merch by Shadow Label</span>
         </div>
       </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="wrap two-col">
+      <div class="hero-art">
+        <div class="frame tilt">
+          <!-- Replace with your real image path -->
+          <img src="images/maurice-hero.jpg" alt="Maurice Fulton portrait" />
+        </div>
+
+        <div class="floating" aria-hidden="true">
+          <div class="chip">House</div>
+          <div class="chip">Disco</div>
+          <div class="chip">Broken Beat</div>
+          <div class="chip">Experimental</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2">About</h2>
+        <p class="muted">A musical architect with a signature that’s both classic and futuristic.</p>
+      </div>
+
+      <div class="two-col">
         <div>
-          <h2 class="h2">About</h2>
           <p class="copy">
-            Maurice Fulton is widely respected for a bold, inventive approach to DJing and production—
-            blending classic house spirit with experimental texture and playful rhythm design.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- MUSIC -->
-    <section id="music" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="h2">Music Highlights</h2>
-        </div>
-
-        <div class="grid cards">
-          <article class="card reveal">
-            <div class="cover">
-              <img src="assets/cover-gypsywoman.jpg" alt="Cover art: Gypsy Woman" />
-              <div class="shine"></div>
-            </div>
-            <div class="card-body">
-              <h3>Gypsy Woman</h3>
-              <div class="row">
-                <a class="mini"
-                   href="https://open.spotify.com/artist/4T6l995AHz8HCY7TCfQorD"
-                   target="_blank" rel="noopener noreferrer">
-                  Play on Spotify
-                </a>
-                <a class="mini ghost" href="#booking">Book</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="cover">
-              <img src="assets/cover-panther.jpg" alt="Cover art" />
-              <div class="shine"></div>
-            </div>
-            <div class="card-body">
-              <h3>Jigoo Love</h3>
-              <div class="row">
-                <a class="mini"
-                   href="https://music.apple.com/us/artist/maurice-fulton/29292917"
-                   target="_blank" rel="noopener noreferrer">
-                  Play on Apple Music
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="cover">
-              <img src="assets/cover-red.jpg" alt="Cover art" />
-              <div class="shine"></div>
-            </div>
-            <div class="card-body">
-              <h3>Endeavor</h3>
-              <div class="row">
-                <a class="mini" href="#listen">Streaming</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <div class="cover">
-              <img src="assets/bubble-tease.jpg" alt="BubbleTease Communications art" />
-              <div class="shine"></div>
-            </div>
-            <div class="card-body">
-              <h3>BubbleTease Era</h3>
-              <div class="row">
-                <a class="mini"
-                   href="https://bubbleteasecommunications.bandcamp.com/album/maurice-fulton-presents-up"
-                   target="_blank" rel="noopener noreferrer">
-                  Bandcamp
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHADOW LABEL MERCH -->
-    <section id="shadow-label" class="section shadow-section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="h2">Shadow Label Merch</h2>
-          <p class="copy">
-            Limited artist merch inspired by club culture, minimalism, and industrial aesthetics.
+            Maurice Fulton is celebrated for an adventurous approach to house music—blending deep rhythm,
+            playful edits, and bold experimentation. Across decades of releases, remixes, and DJ sets,
+            his sound has influenced dance floors worldwide.
           </p>
 
-          <div class="hero-actions" style="margin: 12px 0 20px;">
-            <a class="pill"
-               href="https://www.instagram.com/1shadowlabel?igsh=cWs2d2I4c241YmJ6&utm_source=qr"
-               target="_blank"
-               rel="noopener noreferrer">
-              Follow @1shadowlabel on Instagram
-            </a>
+          <div class="callout">
+            <h3>Known for</h3>
+            <ul class="tags">
+              <li>DJ sets with range + surprise</li>
+              <li>abstract vintage aesthetics</li>
+              <li>deep groove + off-kilter funk</li>
+              <li>remixes + productions</li>
+            </ul>
           </div>
         </div>
 
-        <div class="merch-grid scale-reveal">
-          <div class="merch-card">
-            <img src="assets/shadow1.jpg" alt="Shadow Label Tee 1" />
-            <div class="merch-caption">Shadow Label Tee</div>
+        <aside class="panel">
+          <img src="images/about.jpg" alt="Studio vibe image" />
+          <div class="panel-foot">
+            <div class="label">Abstract Vintage</div>
+            <div class="small">A visual + sonic language that stays timeless.</div>
           </div>
-
-          <div class="merch-card">
-            <img src="assets/shadow2.jpg" alt="Shadow Label Tee 2" />
-            <div class="merch-caption">Oversized Fit</div>
-          </div>
-
-          <div class="merch-card">
-            <img src="assets/shadow3.jpg" alt="Shadow Label Tee 3" />
-            <div class="merch-caption">Limited Edition</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKING -->
-    <section id="booking" class="section">
-      <div class="wrap two-col">
-        <div>
-          <h2 class="h2">Booking / Contact</h2>
-          <p class="copy">
-            Use this form for bookings, press, and show requests.
-          </p>
-
-          <div class="hero-actions" style="margin: 16px 0;">
-            <a class="pill"
-               href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6"
-               target="_blank" rel="noopener noreferrer">
-              Instagram (DM for Booking)
-            </a>
-          </div>
-
-          <form class="form">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@email.com" required />
-            </div>
-            <div class="field">
-              <label for="msg">Message</label>
-              <textarea id="msg" name="message" rows="5" placeholder="Booking details..." required></textarea>
-            </div>
-
-            <div class="row">
-              <button class="btn" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-
-        <aside class="aside panel">
-          <p class="small muted">Contact:</p>
-          <p class="email">booking</p>
-          <p class="small muted">Instagram:
-            <a href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6"
-               target="_blank" rel="noopener noreferrer">@mauricefulton</a>
-          </p>
         </aside>
       </div>
-    </section>
 
-  </main>
+    </div>
+  </section>
 
-  <!-- AFFILIATE FOOTER -->
-  <footer class="site-footer"
-    style="margin-top:80px; padding:28px 16px; text-align:center; border-top:1px solid #222;">
+  <!-- Music / Streaming -->
+  <section id="music" class="section reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2">Listen</h2>
+        <p class="muted">Stream Maurice Fulton on your favorite platform.</p>
+      </div>
 
-    <p style="font-size:13px; opacity:.8; margin-bottom:10px;">
-      © 2026 Maurice Fulton — All rights reserved.
-    </p>
+      <div class="grid cards">
+        <article class="card">
+          <div class="cover">
+            <img src="images/spotify.jpg" alt="Spotify cover" />
+            <div class="shine" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3>Spotify</h3>
+            <p class="small">Top tracks, playlists, and new releases.</p>
+            <div class="row">
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://open.spotify.com/artist/4T6l995AHz8HCY7TCfQorD">
+                Open Spotify
+              </a>
+              <a class="btn ghost mini" target="_blank" rel="noopener"
+                 href="https://open.spotify.com/artist/4T6l995AHz8HCY7TCfQorD">
+                Follow
+              </a>
+            </div>
+          </div>
+        </article>
 
-    <p style="font-size:13px; opacity:.8; margin-bottom:10px;">
-      Recommended:
-    </p>
+        <article class="card">
+          <div class="cover">
+            <img src="images/applemusic.jpg" alt="Apple Music cover" />
+            <div class="shine" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3>Apple Music</h3>
+            <p class="small">Albums, essentials, and curated listening.</p>
+            <div class="row">
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://music.apple.com/us/artist/maurice-fulton/29292917">
+                Open Apple Music
+              </a>
+              <a class="btn ghost mini" target="_blank" rel="noopener"
+                 href="https://music.apple.com/us/artist/maurice-fulton/29292917">
+                Add
+              </a>
+            </div>
+          </div>
+        </article>
 
-    <a href="https://www.amazon.com/Apple-Bluetooth-Headphones-Personalized-Effortless/dp/B0DGHMNQ5Z"
-       target="_blank"
-       rel="nofollow sponsored noopener noreferrer"
-       style="
-         display:inline-block;
-         font-size:16px;
-         font-weight:600;
-         background:#ff9900;
-         color:black;
-         padding:12px 20px;
-         border-radius:999px;
-         text-decoration:none;
-         margin-bottom:12px;
-       ">
-      Buy AirPods 4 on Amazon
-    </a>
+        <article class="card">
+          <div class="cover">
+            <img src="images/youtube.jpg" alt="YouTube cover" />
+            <div class="shine" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3>YouTube</h3>
+            <p class="small">Watch sets, mixes, and classic moments.</p>
+            <div class="row">
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://youtube.com/playlist?list=PLjQhLROnKpwwVk5i4wuQWfF_4Ncld-9um&si=IveuCvKuwkXJHeAk">
+                Open YouTube
+              </a>
+              <a class="btn ghost mini" target="_blank" rel="noopener"
+                 href="https://youtube.com/playlist?list=PLjQhLROnKpwwVk5i4wuQWfF_4Ncld-9um&si=IveuCvKuwkXJHeAk">
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </article>
 
-    <p style="font-size:12px; opacity:.75;">Affiliate link</p>
+        <article class="card">
+          <div class="cover">
+            <img src="images/bandcamp.jpg" alt="Bandcamp cover" />
+            <div class="shine" aria-hidden="true"></div>
+          </div>
+          <div class="card-body">
+            <h3>Bandcamp</h3>
+            <p class="small">Support directly. Explore deeper cuts.</p>
+            <div class="row">
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://bubbleteasecommunications.bandcamp.com/album/maurice-fulton-presents-up">
+                Open Bandcamp
+              </a>
+              <a class="btn ghost mini" target="_blank" rel="noopener"
+                 href="https://bubbleteasecommunications.bandcamp.com/album/maurice-fulton-presents-up">
+                Buy
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
 
-    <p style="font-size:12px; opacity:.7; margin-top:8px;">
-      <a href="/privacy.html"
-         style="color:#9ecaff; text-decoration:none;">
-        Privacy Policy
-      </a>
-    </p>
+    </div>
+  </section>
+
+  <!-- Releases -->
+  <section id="releases" class="section reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2">Releases</h2>
+        <p class="muted">Albums, projects, and essential moments.</p>
+      </div>
+
+      <div class="masonry" aria-label="Release gallery">
+        <!-- Replace images with real album covers -->
+        <div class="tile"><img src="images/release1.jpg" alt="Release cover 1"></div>
+        <div class="tile"><img src="images/release2.jpg" alt="Release cover 2"></div>
+        <div class="tile"><img src="images/release3.jpg" alt="Release cover 3"></div>
+        <div class="tile"><img src="images/release4.jpg" alt="Release cover 4"></div>
+        <div class="tile"><img src="images/release5.jpg" alt="Release cover 5"></div>
+        <div class="tile"><img src="images/release6.jpg" alt="Release cover 6"></div>
+      </div>
+
+      <div class="callout" style="margin-top:18px">
+        <h3>Featured tracks</h3>
+        <ul class="tags">
+          <li>Gypsy Woman (rework / edits)</li>
+          <li>Jigoo Love</li>
+          <li>Endeavor</li>
+        </ul>
+        <p class="small" style="margin-top:10px">
+          Tip: replace the featured track list with official links or embed players if you want.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHADOW LABEL (MERCH) ================= -->
+  <section id="shadow-label" class="section reveal">
+    <div class="wrap">
+
+      <div class="section-head">
+        <h2 class="h2">Shadow Label</h2>
+        <div class="drop-badge" title="Limited drop">
+          <span class="drop-dot" aria-hidden="true"></span>
+          LIVE DROP
+        </div>
+      </div>
+
+      <div class="shadow-grid">
+
+        <div class="shadow-card">
+          <div class="shadow-media">
+            <img src="images/shadow-label.jpg" alt="Shadow Label merch preview">
+          </div>
+
+          <div class="shadow-body">
+            <h3>Shadow Label Merch</h3>
+            <p class="copy">
+              Limited streetwear drops curated for the culture. Built under High Frequency Tech & Digital Studio.
+            </p>
+
+            <div class="row">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">
+                View Instagram
+              </a>
+
+              <!-- Optional: add your merch link here -->
+              <a class="btn ghost" href="#booking">Booking</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-highlight">
+          <h3>Drop Details</h3>
+          <ul>
+            <li>⚡ Limited editions • small runs</li>
+            <li>⚡ Abstract vintage design language</li>
+            <li>⚡ Culture-first • independent ownership</li>
+            <li>⚡ New drops announced on IG</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Optional product cards -->
+      <div class="shadow-products" aria-label="Shadow Label products">
+
+        <article class="shadow-product">
+          <div class="pimg"><img src="images/shadow-hoodie.jpg" alt="Shadow Label Hoodie"></div>
+          <div class="pbody">
+            <h4 class="ptitle">Shadow Hoodie</h4>
+            <div class="pmeta">
+              <span class="price">$85</span>
+              <span class="tag">Limited</span>
+              <span class="tag">Heavyweight</span>
+            </div>
+            <div class="pactions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
+              <a class="btn ghost" href="#booking">Book Maurice</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="shadow-product">
+          <div class="pimg"><img src="images/shadow-tee.jpg" alt="Shadow Label Tee"></div>
+          <div class="pbody">
+            <h4 class="ptitle">Shadow Tee</h4>
+            <div class="pmeta">
+              <span class="price">$40</span>
+              <span class="tag">Drop</span>
+              <span class="tag">Premium</span>
+            </div>
+            <div class="pactions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
+              <a class="btn ghost" href="#music">Listen</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="shadow-product">
+          <div class="pimg"><img src="images/shadow-cap.jpg" alt="Shadow Label Cap"></div>
+          <div class="pbody">
+            <h4 class="ptitle">Shadow Cap</h4>
+            <div class="pmeta">
+              <span class="price">$28</span>
+              <span class="tag">Embroidered</span>
+              <span class="tag">One Size</span>
+            </div>
+            <div class="pactions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
+              <a class="btn ghost" href="#releases">Releases</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking / Contact -->
+  <section id="booking" class="section reveal">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2">Booking</h2>
+        <p class="muted">For bookings, collaborations, and press inquiries.</p>
+      </div>
+
+      <div class="two-col">
+        <form class="form" onsubmit="return false;">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="5" placeholder="Tell us about the event / inquiry..."></textarea>
+          </div>
+          <button class="btn" type="button" id="copyBtn">Copy booking email</button>
+          <div class="small" style="margin-top:10px">
+            Tip: Replace the email below with the official booking email you want.
+          </div>
+        </form>
+
+        <aside class="panel aside">
+          <div class="aside-top">
+            <h3>Direct Contact</h3>
+            <div class="small">Use the info below to connect quickly.</div>
+            <div class="email" id="bookingEmail">booking@mauricefulton.com</div>
+            <div class="aside-links" style="margin-top:12px">
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6">
+                Instagram
+              </a>
+              <a class="btn ghost" target="_blank" rel="noopener"
+                 href="https://open.spotify.com/artist/4T6l995AHz8HCY7TCfQorD">
+                Spotify
+              </a>
+              <a class="btn ghost" target="_blank" rel="noopener"
+                 href="https://music.apple.com/us/artist/maurice-fulton/29292917">
+                Apple Music
+              </a>
+            </div>
+          </div>
+
+          <div class="aside-foot">
+            <div class="label">Merch</div>
+            <div class="small" style="margin-top:6px">
+              Shadow Label merch updates: <a href="https://www.instagram.com/1shadowlabel" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="muted">© <span id="yr"></span> Maurice Fulton — Official</div>
+      <div class="muted">Built by High Frequency Tech • Shadow Label Merch</div>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Minimal JS (inlined) -->
+  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Reveal on scroll
+    const els = Array.from(document.querySelectorAll('.reveal'));
+    const io = new IntersectionObserver((entries)=>{
+      for (const e of entries){
+        if (e.isIntersecting) e.target.classList.add('on');
+      }
+    }, {threshold: 0.12});
+    els.forEach(el=>io.observe(el));
+
+    // Theme toggle (dark <-> light)
+    const themeBtn = document.getElementById('themeBtn');
+    const root = document.documentElement;
+    themeBtn?.addEventListener('click', ()=>{
+      const isLight = root.getAttribute('data-theme') === 'light';
+      root.setAttribute('data-theme', isLight ? 'dark' : 'light');
+    });
+
+    // Copy booking email
+    const copyBtn = document.getElementById('copyBtn');
+    const bookingEmail = document.getElementById('bookingEmail');
+    copyBtn?.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(bookingEmail.textContent.trim());
+        copyBtn.textContent = 'Copied!';
+        setTimeout(()=> copyBtn.textContent = 'Copy booking email', 1200);
+      }catch(e){
+        alert('Copy failed. Please copy manually: ' + bookingEmail.textContent.trim());
+      }
+    });
+
+    // Simple animated canvas background (lightweight)
+    const canvas = document.getElementById('flow');
+    const ctx = canvas.getContext('2d');
+    let w, h, t = 0;
+
+    function resize(){
+      w = canvas.width = window.innerWidth * devicePixelRatio;
+      h = canvas.height = window.innerHeight * devicePixelRatio;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function draw(){
+      t += 0.005;
+      ctx.clearRect(0,0,w,h);
+
+      // soft moving lines
+      const lines = 18;
+      for(let i=0;i<lines;i++){
+        const y = (h/(lines-1))*i;
+        ctx.beginPath();
+        for(let x=0;x<=w;x+=40){
+          const yy = y + Math.sin((x*0.002) + t + i*0.35) * 18 * devicePixelRatio;
+          if(x===0) ctx.moveTo(x, yy);
+          else ctx.lineTo(x, yy);
+        }
+        ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+        ctx.lineWidth = 2 * devicePixelRatio;
+        ctx.stroke();
+      }
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+
 </body>
 </html>
