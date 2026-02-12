@@ -4,20 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Maurice Fulton — Official</title>
-  <meta name="description" content="Maurice Fulton — iconic DJ/producer. Abstract vintage site with streaming links, releases, bookings, and Shadow Label merch." />
+  <meta name="description" content="Maurice Fulton — iconic DJ/producer. Streaming, releases, booking, and Shadow Label merch." />
 
-  <!-- ✅ Correct CSS link -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Optional: helps caching behave better on GH Pages -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <!-- ✅ MUST be exactly this (your styles.css is in repo root) -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body id="top">
 
-  <!-- Ambient background -->
+  <!-- Background -->
   <div class="bg">
     <div class="blob b1"></div>
     <div class="blob b2"></div>
@@ -34,14 +29,14 @@
 
     <nav class="nav" aria-label="Primary">
       <a href="#about">About</a>
-      <a href="#music">Music</a>
+      <a href="#listen">Listen</a>
       <a href="#releases">Releases</a>
       <a href="#shadow-label">Shadow Label</a>
       <a href="#booking">Booking</a>
     </nav>
 
     <div class="cta">
-      <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">Theme</button>
+      <button class="btn ghost" id="themeBtn" type="button">Theme</button>
       <a class="btn" href="#booking">Book</a>
     </div>
   </header>
@@ -58,11 +53,11 @@
         </h1>
 
         <p class="lead">
-          A boundary-pushing artist known for deep grooves, experimental house, and fearless musical range.
-          Explore streaming links, releases, and booking info below.
+          Boundary-pushing grooves, playful edits, and fearless experimentation.
+          Stream the music, explore key releases, and shop Shadow Label merch.
         </p>
 
-        <div class="stats" aria-label="Artist stats">
+        <div class="stats" aria-label="Stats">
           <div class="stat">
             <div class="stat-num">300K+</div>
             <span class="stat-label">monthly listeners</span>
@@ -78,26 +73,26 @@
         </div>
 
         <div class="hero-actions">
-          <a class="pill" href="#music">Listen Now</a>
+          <a class="pill" href="#listen">Listen Now</a>
           <a class="pill" href="#releases">See Releases</a>
           <a class="pill" href="#shadow-label">Shadow Label Merch</a>
-          <a class="pill small" target="_blank" href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6" rel="noopener">
+          <a class="pill small" target="_blank" rel="noopener"
+             href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6">
             Instagram
           </a>
         </div>
 
         <div class="note">
           <span class="dot" aria-hidden="true"></span>
-          <span>Official site • Streaming + bookings • Merch by Shadow Label</span>
+          <span>Official site • Streaming + bookings • Shadow Label merch</span>
         </div>
       </div>
 
       <div class="hero-art">
         <div class="frame tilt">
-          <!-- Replace with your real image path -->
-          <img src="images/maurice-hero.jpg" alt="Maurice Fulton portrait" />
+          <!-- ✅ Your real hero photo -->
+          <img src="assets/dj-photo.jpg" alt="Maurice Fulton DJ photo" loading="lazy">
         </div>
-
         <div class="floating" aria-hidden="true">
           <div class="chip">House</div>
           <div class="chip">Disco</div>
@@ -114,15 +109,15 @@
     <div class="wrap">
       <div class="section-head">
         <h2 class="h2">About</h2>
-        <p class="muted">A musical architect with a signature that’s both classic and futuristic.</p>
+        <p class="muted">A musical architect with a signature that’s classic and futuristic.</p>
       </div>
 
       <div class="two-col">
         <div>
           <p class="copy">
-            Maurice Fulton is celebrated for an adventurous approach to house music—blending deep rhythm,
-            playful edits, and bold experimentation. Across decades of releases, remixes, and DJ sets,
-            his sound has influenced dance floors worldwide.
+            Maurice Fulton is celebrated for adventurous, groove-driven dance music that bends genres with ease.
+            From deep, soulful rhythms to left-field edits and bold experimentation, his work has influenced
+            dance floors worldwide for decades.
           </p>
 
           <div class="callout">
@@ -137,7 +132,8 @@
         </div>
 
         <aside class="panel">
-          <img src="images/about.jpg" alt="Studio vibe image" />
+          <!-- ✅ Your bubble-tease image -->
+          <img src="assets/bubble-tease.jpg" alt="Bubble Tease cover / visual" loading="lazy">
           <div class="panel-foot">
             <div class="label">Abstract Vintage</div>
             <div class="small">A visual + sonic language that stays timeless.</div>
@@ -148,8 +144,8 @@
     </div>
   </section>
 
-  <!-- Music / Streaming -->
-  <section id="music" class="section reveal">
+  <!-- Listen -->
+  <section id="listen" class="section reveal">
     <div class="wrap">
       <div class="section-head">
         <h2 class="h2">Listen</h2>
@@ -159,7 +155,7 @@
       <div class="grid cards">
         <article class="card">
           <div class="cover">
-            <img src="images/spotify.jpg" alt="Spotify cover" />
+            <img src="assets/cover-red.jpg" alt="Spotify visual" loading="lazy">
             <div class="shine" aria-hidden="true"></div>
           </div>
           <div class="card-body">
@@ -180,7 +176,7 @@
 
         <article class="card">
           <div class="cover">
-            <img src="images/applemusic.jpg" alt="Apple Music cover" />
+            <img src="assets/cover-panther.jpg" alt="Apple Music visual" loading="lazy">
             <div class="shine" aria-hidden="true"></div>
           </div>
           <div class="card-body">
@@ -201,7 +197,7 @@
 
         <article class="card">
           <div class="cover">
-            <img src="images/youtube.jpg" alt="YouTube cover" />
+            <img src="assets/cover-gypsywoman.jpg" alt="YouTube visual" loading="lazy">
             <div class="shine" aria-hidden="true"></div>
           </div>
           <div class="card-body">
@@ -222,7 +218,7 @@
 
         <article class="card">
           <div class="cover">
-            <img src="images/bandcamp.jpg" alt="Bandcamp cover" />
+            <img src="assets/bubble-tease.jpg" alt="Bandcamp visual" loading="lazy">
             <div class="shine" aria-hidden="true"></div>
           </div>
           <div class="card-body">
@@ -250,34 +246,30 @@
     <div class="wrap">
       <div class="section-head">
         <h2 class="h2">Releases</h2>
-        <p class="muted">Albums, projects, and essential moments.</p>
+        <p class="muted">Key visuals (swap or expand anytime).</p>
       </div>
 
       <div class="masonry" aria-label="Release gallery">
-        <!-- Replace images with real album covers -->
-        <div class="tile"><img src="images/release1.jpg" alt="Release cover 1"></div>
-        <div class="tile"><img src="images/release2.jpg" alt="Release cover 2"></div>
-        <div class="tile"><img src="images/release3.jpg" alt="Release cover 3"></div>
-        <div class="tile"><img src="images/release4.jpg" alt="Release cover 4"></div>
-        <div class="tile"><img src="images/release5.jpg" alt="Release cover 5"></div>
-        <div class="tile"><img src="images/release6.jpg" alt="Release cover 6"></div>
+        <div class="tile"><img src="assets/cover-gypsywoman.jpg" alt="Gypsy Woman cover" loading="lazy"></div>
+        <div class="tile"><img src="assets/cover-panther.jpg" alt="Panther cover" loading="lazy"></div>
+        <div class="tile"><img src="assets/cover-red.jpg" alt="Red cover" loading="lazy"></div>
+        <div class="tile"><img src="assets/bubble-tease.jpg" alt="Bubble Tease cover" loading="lazy"></div>
+        <div class="tile"><img src="assets/dj-photo.jpg" alt="Live photo" loading="lazy"></div>
+        <div class="tile"><img src="assets/cover-gypsywoman.jpg" alt="Release cover alt" loading="lazy"></div>
       </div>
 
       <div class="callout" style="margin-top:18px">
         <h3>Featured tracks</h3>
         <ul class="tags">
-          <li>Gypsy Woman (rework / edits)</li>
+          <li>Gypsy Woman</li>
           <li>Jigoo Love</li>
           <li>Endeavor</li>
         </ul>
-        <p class="small" style="margin-top:10px">
-          Tip: replace the featured track list with official links or embed players if you want.
-        </p>
       </div>
     </div>
   </section>
 
-  <!-- ================= SHADOW LABEL (MERCH) ================= -->
+  <!-- Shadow Label -->
   <section id="shadow-label" class="section reveal">
     <div class="wrap">
 
@@ -290,24 +282,22 @@
       </div>
 
       <div class="shadow-grid">
-
         <div class="shadow-card">
           <div class="shadow-media">
-            <img src="images/shadow-label.jpg" alt="Shadow Label merch preview">
+            <!-- ✅ Uses your real merch image -->
+            <img src="assets/shadow1.jpg" alt="Shadow Label Merch" loading="lazy">
           </div>
 
           <div class="shadow-body">
             <h3>Shadow Label Merch</h3>
             <p class="copy">
-              Limited streetwear drops curated for the culture. Built under High Frequency Tech & Digital Studio.
+              Limited streetwear drops curated for the culture. New drops announced on IG.
             </p>
 
             <div class="row">
               <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">
                 View Instagram
               </a>
-
-              <!-- Optional: add your merch link here -->
               <a class="btn ghost" href="#booking">Booking</a>
             </div>
           </div>
@@ -318,56 +308,41 @@
           <ul>
             <li>⚡ Limited editions • small runs</li>
             <li>⚡ Abstract vintage design language</li>
-            <li>⚡ Culture-first • independent ownership</li>
-            <li>⚡ New drops announced on IG</li>
+            <li>⚡ Culture-first • independent</li>
+            <li>⚡ Drop alerts on IG</li>
           </ul>
         </div>
-
       </div>
 
-      <!-- Optional product cards -->
       <div class="shadow-products" aria-label="Shadow Label products">
-
         <article class="shadow-product">
-          <div class="pimg"><img src="images/shadow-hoodie.jpg" alt="Shadow Label Hoodie"></div>
+          <div class="pimg">
+            <img src="assets/shadow1.jpg" alt="Shadow Drop 01" loading="lazy">
+          </div>
           <div class="pbody">
-            <h4 class="ptitle">Shadow Hoodie</h4>
+            <h4 class="ptitle">Shadow Drop 01</h4>
             <div class="pmeta">
               <span class="price">$85</span>
               <span class="tag">Limited</span>
-              <span class="tag">Heavyweight</span>
+              <span class="tag">Drop</span>
             </div>
             <div class="pactions">
               <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
-              <a class="btn ghost" href="#booking">Book Maurice</a>
+              <a class="btn ghost" href="#listen">Listen</a>
             </div>
           </div>
         </article>
 
         <article class="shadow-product">
-          <div class="pimg"><img src="images/shadow-tee.jpg" alt="Shadow Label Tee"></div>
+          <div class="pimg">
+            <img src="assets/shadow2.jpg" alt="Shadow Drop 02" loading="lazy">
+          </div>
           <div class="pbody">
-            <h4 class="ptitle">Shadow Tee</h4>
+            <h4 class="ptitle">Shadow Drop 02</h4>
             <div class="pmeta">
               <span class="price">$40</span>
-              <span class="tag">Drop</span>
               <span class="tag">Premium</span>
-            </div>
-            <div class="pactions">
-              <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
-              <a class="btn ghost" href="#music">Listen</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="shadow-product">
-          <div class="pimg"><img src="images/shadow-cap.jpg" alt="Shadow Label Cap"></div>
-          <div class="pbody">
-            <h4 class="ptitle">Shadow Cap</h4>
-            <div class="pmeta">
-              <span class="price">$28</span>
-              <span class="tag">Embroidered</span>
-              <span class="tag">One Size</span>
+              <span class="tag">Limited</span>
             </div>
             <div class="pactions">
               <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
@@ -376,12 +351,29 @@
           </div>
         </article>
 
+        <article class="shadow-product">
+          <div class="pimg">
+            <img src="assets/shadow3.jpg" alt="Shadow Drop 03" loading="lazy">
+          </div>
+          <div class="pbody">
+            <h4 class="ptitle">Shadow Drop 03</h4>
+            <div class="pmeta">
+              <span class="price">$28</span>
+              <span class="tag">Exclusive</span>
+              <span class="tag">One Size</span>
+            </div>
+            <div class="pactions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.instagram.com/1shadowlabel">Buy via IG</a>
+              <a class="btn ghost" href="#booking">Book</a>
+            </div>
+          </div>
+        </article>
       </div>
 
     </div>
   </section>
 
-  <!-- Booking / Contact -->
+  <!-- Booking -->
   <section id="booking" class="section reveal">
     <div class="wrap">
       <div class="section-head">
@@ -390,30 +382,31 @@
       </div>
 
       <div class="two-col">
-        <form class="form" onsubmit="return false;">
+        <form class="form" id="bookingForm">
           <div class="field">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" />
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" />
+            <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email">
           </div>
           <div class="field">
             <label for="msg">Message</label>
             <textarea id="msg" name="msg" rows="5" placeholder="Tell us about the event / inquiry..."></textarea>
           </div>
-          <button class="btn" type="button" id="copyBtn">Copy booking email</button>
+          <button class="btn" type="submit">Open Email Draft</button>
           <div class="small" style="margin-top:10px">
-            Tip: Replace the email below with the official booking email you want.
+            This opens your email app with a pre-filled booking message.
           </div>
         </form>
 
         <aside class="panel aside">
           <div class="aside-top">
-            <h3>Direct Contact</h3>
-            <div class="small">Use the info below to connect quickly.</div>
+            <h3>Direct</h3>
+            <div class="small">Replace with the official booking email.</div>
             <div class="email" id="bookingEmail">booking@mauricefulton.com</div>
+
             <div class="aside-links" style="margin-top:12px">
               <a class="btn" target="_blank" rel="noopener"
                  href="https://www.instagram.com/mauricefulton?igsh=MXhjZXczdnhmaXl6">
@@ -433,7 +426,8 @@
           <div class="aside-foot">
             <div class="label">Merch</div>
             <div class="small" style="margin-top:6px">
-              Shadow Label merch updates: <a href="https://www.instagram.com/1shadowlabel" target="_blank" rel="noopener">Instagram</a>
+              Shadow Label updates:
+              <a href="https://www.instagram.com/1shadowlabel" target="_blank" rel="noopener">Instagram</a>
             </div>
           </div>
         </aside>
@@ -450,76 +444,7 @@
     </div>
   </footer>
 
-  <!-- Minimal JS (inlined) -->
-  <script>
-    // Year
-    document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // Reveal on scroll
-    const els = Array.from(document.querySelectorAll('.reveal'));
-    const io = new IntersectionObserver((entries)=>{
-      for (const e of entries){
-        if (e.isIntersecting) e.target.classList.add('on');
-      }
-    }, {threshold: 0.12});
-    els.forEach(el=>io.observe(el));
-
-    // Theme toggle (dark <-> light)
-    const themeBtn = document.getElementById('themeBtn');
-    const root = document.documentElement;
-    themeBtn?.addEventListener('click', ()=>{
-      const isLight = root.getAttribute('data-theme') === 'light';
-      root.setAttribute('data-theme', isLight ? 'dark' : 'light');
-    });
-
-    // Copy booking email
-    const copyBtn = document.getElementById('copyBtn');
-    const bookingEmail = document.getElementById('bookingEmail');
-    copyBtn?.addEventListener('click', async ()=>{
-      try{
-        await navigator.clipboard.writeText(bookingEmail.textContent.trim());
-        copyBtn.textContent = 'Copied!';
-        setTimeout(()=> copyBtn.textContent = 'Copy booking email', 1200);
-      }catch(e){
-        alert('Copy failed. Please copy manually: ' + bookingEmail.textContent.trim());
-      }
-    });
-
-    // Simple animated canvas background (lightweight)
-    const canvas = document.getElementById('flow');
-    const ctx = canvas.getContext('2d');
-    let w, h, t = 0;
-
-    function resize(){
-      w = canvas.width = window.innerWidth * devicePixelRatio;
-      h = canvas.height = window.innerHeight * devicePixelRatio;
-    }
-    window.addEventListener('resize', resize);
-    resize();
-
-    function draw(){
-      t += 0.005;
-      ctx.clearRect(0,0,w,h);
-
-      // soft moving lines
-      const lines = 18;
-      for(let i=0;i<lines;i++){
-        const y = (h/(lines-1))*i;
-        ctx.beginPath();
-        for(let x=0;x<=w;x+=40){
-          const yy = y + Math.sin((x*0.002) + t + i*0.35) * 18 * devicePixelRatio;
-          if(x===0) ctx.moveTo(x, yy);
-          else ctx.lineTo(x, yy);
-        }
-        ctx.strokeStyle = 'rgba(255,255,255,0.05)';
-        ctx.lineWidth = 2 * devicePixelRatio;
-        ctx.stroke();
-      }
-
-      requestAnimationFrame(draw);
-    }
-    draw();
-  </script>
-
+  <!-- Your JS file (keep in repo root) -->
+  <script src="script.js"></script>
 </body>
 </html>
